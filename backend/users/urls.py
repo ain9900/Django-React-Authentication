@@ -1,6 +1,10 @@
 from django.contrib import admin
 from django.urls import path
+from rest_framework.routers import DefaultRouter
+from .views import *
 
-urlpatterns = [
-    #path('/', ),
-]
+router = DefaultRouter()  # Instantiate the router with parentheses
+router.register('register', RegisterViewSet, basename='register')
+router.register('login', LoginViewSet, basename='login')
+
+urlpatterns = router.urls 
