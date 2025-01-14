@@ -6,5 +6,7 @@ from .views import *
 router = DefaultRouter()  # Instantiate the router with parentheses
 router.register('register', RegisterViewSet, basename='register')
 router.register('login', LoginViewSet, basename='login')
+router.register('users', UserViewSet, basename='users')
 
 urlpatterns = router.urls 
+

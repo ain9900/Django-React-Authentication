@@ -30,9 +30,9 @@ function App() {
       content = {
         <Routes>  
           <Route element={<ProtectedRoute/>}>
-              <Route path="/home" element={<Home/>} />
-              <Route path="/about" element={<About/>} />
-          </Route>             
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Route>            
         </Routes> 
 
       }
